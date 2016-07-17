@@ -34,6 +34,13 @@ void decode (char *str, int key) {
 }
 
 
+void input_msg(int key, char *msg) {
+  printf("Enter the message (max characters 80) in uppercase letters "
+         "without any spaces:\n");
+         scanf("%s", msg);
+}
+
+
 int main(void) {
   char command[7];
   printf("Welcome to Caesar Cipher Program!\n");
@@ -47,9 +54,7 @@ int main(void) {
         int RetVal = scanf("%d", &key);
         if ((1 <= key)  && (key <= 25)) {
           char msg[81];
-          printf("Enter the message (max characters 80) in uppercase letters "
-                 "without any spaces:\n");
-          scanf("%s", msg);
+          input_msg(key, msg);
           printf("The encoded message is:\n");
           encode(msg, key);
           break;
@@ -66,9 +71,7 @@ int main(void) {
         int RetVal = scanf("%d", &key);
         if ((1 <= key)  && (key <= 25)) {
           char msg[81];
-          printf("Enter the message (max characters 80) in uppercase letters "
-                 "without any spaces:\n");
-          scanf("%s", msg);
+          input_msg(key, msg);
           printf("The original message is:\n");
           decode(msg, key);
           break;
