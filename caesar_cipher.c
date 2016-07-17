@@ -34,13 +34,6 @@ void decode (char *str, int key) {
 }
 
 
-char *receiveInput() {
-  char *s = (char*) malloc(100);
-  scanf("%s", s);
-  return s;
-}
-
-
 int main(void) {
   char command[7];
   printf("Welcome to Caesar Cipher Program!\n");
