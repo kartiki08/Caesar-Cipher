@@ -60,7 +60,7 @@ int main(void) {
           break;
         }
         else if ((RetVal != 1) || (key > 25) || (key < 1)) {
-          printf("Invalid key!");
+          printf("Invalid key! ");
         }
       }
     }
@@ -77,7 +77,7 @@ int main(void) {
           break;
         }
         else if ((RetVal != 1) || (key > 25) || (key < 1)) {
-          printf("Invalid key!");
+          printf("Invalid key! ");
         }
       }
     }
