@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <crypto.h>
+#include "crypto.h"
 
 void encode(char *str, int key) {
   int len = strlen(str);
