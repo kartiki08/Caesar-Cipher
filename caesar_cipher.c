@@ -45,10 +45,17 @@ int main(void) {
   char command[7];
   printf("Welcome to Caesar Cipher Program!\n");
   while(1) {
-    printf("Command? ('encode', 'decode' or 'quit')\n");
+    printf("Command? ('piglatin', 'encode', 'decode' or 'quit')\n");
     scanf("%s", command);
     int key;
-    if (strcmp(command, "encode") == 0) {
+    if (strcmp(command, "piglatin") == 0) {
+      char word[81];
+      char result[83];
+      if (scanf("%s", word) != 1) break;
+      pig_latin(word, result);
+      printf("%s\n", result);
+    }
+    else if (strcmp(command, "encode") == 0) {
       while (1) {
         printf("Enter a key from 1 to 25:\n");
         int RetVal = scanf("%d", &key);
