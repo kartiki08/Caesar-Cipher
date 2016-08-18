@@ -1,3 +1,5 @@
+#include "crypto.h"
+#include <strings.h>
 
 void piglatin(char *input, char *output) {
   int len = strlen(input) - 1;
