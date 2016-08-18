@@ -2,7 +2,7 @@
 
 //
 
-
+void encode(char *str, int key);
 
 
 
