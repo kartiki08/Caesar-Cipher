@@ -1,8 +1,8 @@
-# Cryptography Programs
-This is a module full of cryptography programs:
+# Cryptography Program
+An I/O program (run through "crypto.c") can currently use two cryptography methods summarized below. To use the functions without the I/O program, please refer to the documentation, "crypto.h".
 
 Caesar Cipher:
-An I/O program that encodes and decodes a message, using one of the earliest known ciphers which shifts each letter a certain number of places down the alphabet. Currently, the program only takes an 80 character long message. 
+Encodes and decodes a message, using one of the earliest known ciphers which shifts each letter a certain number of places down the alphabet.
 
 Pig Latin:
-A program that takes an input and output string which overwrites the content of output with the encoding of input.
+A function that takes an input and output strings and overwrites the content of output with the encoding of input.
