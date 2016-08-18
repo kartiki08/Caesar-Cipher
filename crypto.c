@@ -1,16 +1,21 @@
+#include "caesar_cipher.c"
+#include "pig_latin.c"
+#include <string.h>
+#include <stdio.h>
 #include "crypto.h"
 // Main Program file
 
 int main(void) {
-  char command[7];
+  char command[15];
   printf("Welcome to Cryptography Program!\n");
   while(1) {
-    printf("Command? ('piglatin', 'encode', 'decode' or 'quit')\n");
+    printf("Command? ('piglatin', 'caesar_encode', 'caesar_decode' or 'quit')\n");
     scanf("%s", command);
     int key;
+    char word[81];
+    char result[83];
     if (strcmp(command, "piglatin") == 0) {
-      char word[81];
-      char result[83];
+      printf("Enter a message at most 80 characters long:\n");
       if (scanf("%s", word) != 1) break;
       pig_latin(word, result);
       printf("%s\n", result);
